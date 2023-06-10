@@ -49,3 +49,4 @@ var forms = document.querySelectorAll('.needs-validation');
       form.classList.remove('was-validated'); // Remove the validation styles
     });
   });
+
