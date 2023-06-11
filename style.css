@@ -45,12 +45,60 @@ form {
     padding: 30px; 
     height: 100vh;
 }
-.col-md-6 {
+#Joseph {
     margin: 20px;
 }
 .error {
     border: 1px solid red;
 }
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*margin: -15px;*/
+}
+.photo-grid .col {
+    padding: 15px;
+    width: calc(33.33% - 30px);
+    box-sizing: border-box;
+}
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.photo-grid .col.two-images {
+    width: calc(50% - 30px);
+}
+.contact-details {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.contact-details h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-details .contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-details .contact-info label {
+    font-weight: bold;
+}
+.contact-details .contact-info p {
+    margin-bottom: 0;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 @media screen and (max-width: 800px) {
     aside {
         display: flex;
