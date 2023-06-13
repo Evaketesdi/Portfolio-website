@@ -50,3 +50,19 @@ var forms = document.querySelectorAll('.needs-validation');
     });
   });
 
+  window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+      var btn = document.getElementById("backToTopBtn");
+      if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+
+    function goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  

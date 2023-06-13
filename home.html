@@ -30,7 +30,7 @@
         </div>
       </div>
     </nav>
-    <div style="padding-left: 12px;">
+    <div class="icon-container" style="padding-left: 12px;">
       <a href="https://www.facebook.com/jozsef.hollo"><i class="bi bi-facebook me-3"></i></a>
       <a href="tel:0749533649"><i class="bi bi-telephone me-3"></i></a>
       <a href="mailto:jozsefhollo@protonmail.com"><i class="bi bi-envelope me-3"></i></a>
@@ -84,7 +84,7 @@
           <label for="date" class="form-label">Date:</label>
           <input class="form-control" type="date" id="date" name="date" required><br><br>
           <div class="invalid-feedback">Please select a date.</div><br>
-          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#succesModal" type="submit">Book Now</button>
+          <button class="btn btn-light btn" data-bs-toggle="modal" data-bs-target="#succesModal" type="submit">Book Now</button>
         </div>  
       </form>
     </section>
@@ -101,7 +101,7 @@
           <label for="message" class="form-label">Message:</label>
           <textarea class="form-control" id="message" name="message" required></textarea><br>
           <div class="invalid-feedback">Please type a message.</div><br>
-          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#succesModal" type="submit">Send</button>
+          <button class="btn btn-light btn" data-bs-toggle="modal" data-bs-target="#succesModal" type="submit">Send</button>
         </div>
       </form>
     </section>
@@ -116,7 +116,7 @@
             <span id="successMessage"></span>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary btn" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -149,7 +149,8 @@
         </div>
       </div>
     </section>
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <button onclick="goToTop()" id="backToTopBtn" title="Go to top">▲</button>
+    <div class="text-center p-4">
       © 2023 Copyright: Joseph Photo
     </div>
   </footer>
