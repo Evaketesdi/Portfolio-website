@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
       <div class="d-flex justify-content-between container-fluid">
         <div class="d-flex">
           <span><h2>Joseph Photo</h2></span>
@@ -22,17 +22,16 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown">
-          <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="index.html">Home</a></li>
-            <li><a class="dropdown-item" href="about.html">About</a></li>
-            <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact</a></li> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link px-4" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-4" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link px-4" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link px-4" href="contact.html">Contact</a></li> 
           </ul>
         </div>
       </div>
-    </nav>
+    </nav><br><br><br>
     <div class="icon-container" style="padding-left: 12px;">
       <a href="https://www.facebook.com/jozsef.hollo"><i class="bi bi-facebook me-3"></i></a>
       <a href="tel:0749533649"><i class="bi bi-telephone me-3"></i></a>
@@ -40,7 +39,7 @@
     </div> 
   </header>
   <main>
-    <section style="max-width: 100%; padding: 20px;" id="gallery">
+    <section id="gallery">
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <!-- Indicators/dots -->
         <div class="carousel-indicators">

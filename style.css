@@ -8,7 +8,8 @@ a {
     color: white;
 }
 aside {
-    margin: 20px;
+    width: 60%;
+    margin: 0 auto;
     border-radius: 10px;
     color: whitesmoke;
     background: url(form-bg.jpg) no-repeat;
@@ -24,9 +25,6 @@ nav {
     background-color: black;
     color: whitesmoke;
     
-}
-#dropdownMenuLink {
-    background-color: black;
 }
 a:hover {
     transition: transform 150ms;
@@ -61,6 +59,9 @@ form {
 }
 .error {
     border: 1px solid red;
+}
+#gallery {
+    max-width: 100%;
 }
 .photo-grid {
     margin-top: 50px;
@@ -142,6 +143,7 @@ form {
     aside {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .about-section {
         display: flex;
@@ -160,15 +162,39 @@ form {
         margin-right: auto;
         margin-left: auto;
     }
-    
   } 
- /* @media (max-width: 576px) {
-    .image-container img {
-      width: auto;
-      height: 100%;
-      max-width: none;
-      max-height: none;
+@media (max-width: 992px) {
+    .photo-grid .col {
+        width: calc(50% - 30px);
     }
-  } */
+    .photo-grid .col.two-images {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .photo-grid .col {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .d-flex.justify-content-lg-between {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        margin-bottom: 10px;
+    }
+
+    .text-center.text-md-start {
+        text-align: center !important;
+    }
+
+    .mb-md-0.mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    #contact.d-none.d-lg-block {
+        display: block !important;
+    }
+}
   
 
