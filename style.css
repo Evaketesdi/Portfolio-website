@@ -1,12 +1,74 @@
 body {
-    /*background-color: black;*/
     background: url(bg.jpg) no-repeat;
     background-size: cover;
 }
+/*Navbar styles*/
 a {
     text-decoration: none;
     color: white;
 }
+nav {
+    background-color: black;
+    color: whitesmoke;   
+}
+a:hover {
+    transition: transform 150ms;
+    transform: scale(1.2);
+    color: whitesmoke;
+}
+.camera {
+    margin-top: -5px;
+}
+#camera {
+    max-width: 50px;
+    height: auto;
+}
+/*Hero section styles*/
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url(main-image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero .hero-text {
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+.hero .hero-text span {
+    font-weight: 800;
+}
+.hero p {
+    color: darkgray;
+    font-size: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+/*Image carousel styles*/
+#demo {
+    margin-top: 20px;
+}
+/*Form section styles*/
 aside {
     width: 60%;
     margin: 0 auto;
@@ -21,27 +83,13 @@ aside {
     transform: translateY(-0.2rem);
     transition: transform 150ms;
 }
-nav {
-    background-color: black;
-    color: whitesmoke;
-    
-}
-a:hover {
-    transition: transform 150ms;
-    transform: scale(1.2);
-    color: whitesmoke;
-}
-.camera {
-    margin-top: -5px;
-}
-#camera {
-    max-width: 50px;
-    height: auto;
-}
 form {
-    padding: 50px;
-    
+    padding: 50px;  
 }
+.error {
+    border: 2px solid red;
+}
+/*About page styles*/
 #main-image {
     max-width: 100%;
     height: auto;
@@ -57,9 +105,7 @@ form {
 #Joseph {
     margin-right: 50px;
 }
-.error {
-    border: 1px solid red;
-}
+/*Portfolio page styles*/
 #gallery {
     max-width: 100%;
 }
@@ -89,11 +135,9 @@ form {
     max-width: 100%;
     max-height: 100%;
 }
-#demo {
-    margin-top: 20px;
-}
+/*Contact page styles*/
 .contact-details {
-    margin: 0 auto;
+    margin-top: 110px;
     padding: 30px;
     background-color: rgb(31, 31, 31);
     color: whitesmoke;
@@ -103,11 +147,9 @@ form {
     text-align: center;
     margin-bottom: 30px;
 }
-
 .contact-details .contact-info {
     margin-bottom: 20px;
 }
-
 .contact-details .contact-info label {
     font-weight: bold;
 }
@@ -115,13 +157,16 @@ form {
     margin-bottom: 0;
 }
 .contact-section {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .bi-house:hover, .bi-envelope:hover, .bi-telephone:hover, .bi-facebook:hover {
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.contact-form {
+    width: 30%;
+    margin: 100px;
+}
+
+/*Footer styles*/
+.bi-house:hover, .bi-envelope:hover, .bi-telephone:hover, .bi-facebook:hover {
     color: #008000;
   }
 #backToTopBtn {
@@ -139,21 +184,18 @@ form {
     padding: 15px;
     border-radius: 4px;
 }
+/*Media queries*/
 @media screen and (max-width: 800px) {
     aside {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .about-section {
+    .contact-container .about-section {
         display: flex;
         flex-direction: column;
     }
-   /* #contact {
-        display: flex;
-        text-align: center;
-    }*/
-  }
+}
 @media (min-width: 1200px) {
     #demo {
         max-width: 60%;
@@ -162,7 +204,7 @@ form {
         margin-right: auto;
         margin-left: auto;
     }
-  } 
+} 
 @media (max-width: 992px) {
     .photo-grid .col {
         width: calc(50% - 30px);
@@ -180,15 +222,12 @@ form {
     .d-flex.justify-content-lg-between {
         flex-wrap: wrap;
     }
-
     #contact {
         margin-bottom: 10px;
     }
-
     .text-center.text-md-start {
         text-align: center !important;
     }
-
     .mb-md-0.mb-4 {
         margin-bottom: 1rem !important;
     }
@@ -196,5 +235,21 @@ form {
         display: block !important;
     }
 }
-  
+/*@media (max-width: 768px) {
+    .hero .hero-text {
+      font-size: 50px;
+    }
+    .hero p {
+      font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .hero .hero-text {
+      font-size: 40px;
+    }
+    .hero p {
+      font-size: 10px;
+    }
+}
+
 
