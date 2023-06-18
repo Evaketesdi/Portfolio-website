@@ -27,7 +27,7 @@ a:hover {
 .hero {
     position: relative;
     height: 100vh;
-    background: url(main-image.jpg);
+    background: url(main-image.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -63,6 +63,10 @@ a:hover {
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+.hero p:hover {
+    transition: transform 150ms;
+    transform: scale(1.2);
 }
 /*Image carousel styles*/
 #demo {
@@ -100,7 +104,7 @@ form {
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    height: 100vh;
+    height: 80vh;
 }
 #Joseph {
     margin-right: 50px;
@@ -110,7 +114,6 @@ form {
     max-width: 100%;
 }
 .photo-grid {
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -136,34 +139,25 @@ form {
     max-height: 100%;
 }
 /*Contact page styles*/
-.contact-details {
-    margin-top: 110px;
-    padding: 30px;
-    background-color: rgb(31, 31, 31);
-    color: whitesmoke;
-    border-radius: 5px;
-}
-.contact-details h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.contact-details .contact-info {
-    margin-bottom: 20px;
-}
-.contact-details .contact-info label {
-    font-weight: bold;
-}
-.contact-details .contact-info p {
-    margin-bottom: 0;
-}
-.contact-section {
-    margin-left: 50px;
-    margin-top: 100px;
-}
+  .main-contact-section{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 10%;
+  }
 .contact-form {
-    width: 30%;
-    margin: 100px;
+    background: url(form-bg.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    color: whitesmoke;
 }
+  
+
+  
 
 /*Footer styles*/
 .bi-house:hover, .bi-envelope:hover, .bi-telephone:hover, .bi-facebook:hover {
@@ -191,9 +185,13 @@ form {
         flex-direction: column;
         width: 100%;
     }
-    .contact-container .about-section {
+    .about-section {
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+    #Joseph {
+        margin-right: 0;
     }
 }
 @media (min-width: 1200px) {
@@ -235,21 +233,47 @@ form {
         display: block !important;
     }
 }
-/*@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hero .hero-text {
-      font-size: 50px;
+        font-size: 40px;
     }
-    .hero p {
-      font-size: 12px;
-    }
-}
-@media (max-width: 480px) {
-    .hero .hero-text {
-      font-size: 40px;
-    }
-    .hero p {
-      font-size: 10px;
+    
+    .hero {
+        background-size: 100% auto;
+        height: 80vh;
     }
 }
 
-
+@media screen and (max-width: 480px) {
+    .hero .hero-text {
+        font-size: 30px;
+    }
+    .hero {
+        height: 70vh;
+    }
+}
+@media screen and (min-width: 768px) {
+    .main-contact-section {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact-section,
+    .contact-form {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+    .contact-form {
+        margin-top: 60px;
+    }
+    .contact-section {
+      margin-right: 5%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .main-contact-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
