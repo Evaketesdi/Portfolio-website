@@ -274,3 +274,11 @@ iframe {
         width: 100%;
     }
   }
+  @media (max-width: 1024px) {
+    .portfolio-image.no-hover {
+      cursor: default;
+      transform: none !important;
+      transition: none !important;
+      opacity: 1 !important;
+    }
+  }
