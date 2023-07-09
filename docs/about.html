@@ -2,27 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    >
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-      rel="stylesheet">
-    <link rel="stylesheet" href="/docs/css/style.css">
-    <title>Portfolio</title>
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="/docs/style.css">
+    <title>About</title>
   </head>
   <body>
-    <!--Navbar section-->
+    <!--Navbar section-->/
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
         <div class="d-flex justify-content-between container-fluid">
           <div class="d-flex">
             <div><h2>Joseph Photo</h2></div>
             <span class="camera">
-              <img id="camera" src="/docs/images/camera-logo.png" alt="camera-logo">
+              <img id="camera" src="/docs/camera-logo.png" alt="camera-logo">
             </span>
           </div>
           <button
@@ -54,94 +57,55 @@
           </div>
         </div>
       </nav>
-      <br><br><br>
     </header>
-    <!--Image grid section-->
+    <!--About section-->
     <main>
-      <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 photo-grid">
-          <div class="col">
-            <div class="image-container">
-              <img
-                src="/docs/images/photo1.jpg"
-                alt="disguised guy"
-                class="portfolio-image img-fluid">
-            </div>
+      <div class="container">
+        <div class="about-section" class="row"  >
+          <div id="Joseph" class="col-md-6">
+            <img
+              id="main-image"
+              src="/docs/main-image.jpg"
+              alt="Photographer taking photos"
+            >
           </div>
-          <div class="col">
-            <div class="image-container">
-              <img
-                src="/docs/images/photo8.jpg"
-                alt="streetartist playing guitar"
-                class="portfolio-image img-fluid">
-            </div>
-          </div>
-          <div class="col">
-            <div class="image-container">
-              <img
-                src="/docs/images/photo3.jpg"
-                alt="football game"
-                class="portfolio-image img-fluid">
-            </div>
-          </div>
-          <div class="col two-images">
-            <div class="image-contaier">
-              <img
-                src="/docs/images/photo6.jpg"
-                alt="Bride and Groom on balcony"
-                class="portfolio-image img-fluid">
-            </div>
-          </div>
-          <div class="col two-images">
-            <div class="image-container">
-              <img
-                src="/docs/images/photo2.jpg"
-                alt="Band playing on a terrace"
-                class="portfolio-image img-fluid">
-            </div>
-          </div>
-          <div class="col">
-            <div class="image-container">
-              <img
-                src="/docs/images/photo4.jpg"
-                alt="Vintage lamp"
-                class="portfolio-image img-fluid">
-            </div>
-          </div>
-          <div class="col">
-            <div class="image-container">
-              <img
-                src="/docs/images/photo7.jpg"
-                alt="Medieval city center"
-                class="portfolio-image img-fluid">
-            </div>
-          </div>
-          <div class="col">
-            <div class="image-container">
-              <img
-                src="/docs/images/photo5.jpg"
-                alt="Bride and Groom"
-                class="portfolio-image img-fluid">
-            </div>
+          <div class="col-md-6">
+            <br>
+            <h2 class="text-white text-center">Hi, there!</h2>
+            <br>
+            <p class="text-white me-3">
+              I am Joseph, I’m a full-time freelance photographer. In my first
+              year as a photographer, I thought the photos I took needed more
+              spark. So I enrolled in a graphic design class. I combined my
+              photographs with visual arts and finally saw what I was looking
+              for. The spark! <br>
+              Check out my portfolio and see how I transform normal photos into
+              enchanting ones!
+            </p>
           </div>
         </div>
       </div>
     </main>
+    <br>
     <!--Footer section-->
     <footer class="text-center text-lg-start bg-black text-muted text-white">
-      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
         <div id="contact" class="me-3 d-none d-lg-block">
           <span class="me-3">Get connected with me</span>
           <a href="https://www.facebook.com/jozsef.hollo">
-            <i class="bi bi-facebook me-3"></i>
-          </a>
+            <i class="bi bi-facebook me-3"></i
+          ></a>
           <a href="tel:0749533649"><i class="bi bi-telephone me-3"></i></a>
           <a href="mailto:jozsefhollo@protonmail.com"
-            ><i class="bi bi-envelope me-3"></i>
-          </a>
+            ><i class="bi bi-envelope me-3"></i
+          ></a>
         </div>
       </section>
-      <section class="d-flex justify-content-center justify-content-lg-between p-4">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4"
+      >
         <div class="container text-center text-md-start mt-5">
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -173,6 +137,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/docs/js/portfolio.js"></script>
+    <script src="/docs/script.js"></script>
   </body>
 </html>

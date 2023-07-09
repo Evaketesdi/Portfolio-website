@@ -1,5 +1,5 @@
 body {
-    background: url(/docs/images/bg.jpg) no-repeat;
+    background: url(/docs/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -28,7 +28,7 @@ a:hover {
 .hero {
     position: relative;
     height: 100vh;
-    background: url(/docs/images/main-image.jpg) no-repeat;
+    background: url(/docs/main-image.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -79,7 +79,7 @@ aside {
     margin: 0 auto;
     border-radius: 10px;
     color: whitesmoke;
-    background: url(/docs/images/form-bg.jpg) no-repeat;
+    background: url(/docs/form-bg.jpg) no-repeat;
     background-size: cover;
 }
 .btn:hover {
@@ -146,7 +146,7 @@ form {
     flex-direction: row;
   }
   .contact-form {
-    background: url(/docs/images/form-bg.jpg) no-repeat;
+    background: url(/docs/form-bg.jpg) no-repeat;
     background-size: cover;
     border-radius: 10px;
     color: whitesmoke;
